@@ -11,4 +11,18 @@
 <body>
 <table><tr><td width=2000><img src="2.jpg" height=300 width=100%>
 <font size=10>siRNA Check</font> &#8212; &#8212; SiRNA off-target search website  <a href="help.html">[help]</a>
-<br><font size=3><a href=index.php>dsRNA Design page</a> / <a href=indexx.php><b>dsRNA Verification page</b></a></font><hr noshade style="color: #dddddd;height : 1px"></td></tr></table><table>
+
+<form action=indexx.php method=post>
+<tr><td><font size=2>Enter an accession number and retrieve sequence</font></td></tr>
+<tr><td>
+ <input class=lined type=text name="seqid" value="">
+ <input type=submit name="submit" value="retrieve sequence">
+</td></tr>
+</form>
+<form action=verify.php method=post>
+<tr><td>
+  <font size=2>or Paste in a nucleotide sequence</font>
+  <br>
+  <textarea class=lined name="fasta" rows=20 cols=80>>sample sequence (Drosophila pou2; NM_078834.2, CDS)
+atgatggtgctacagcaacaacaacaacagcgtctctgggatgcaacaacaacgagcaacacaaatacacaaacacagcaatcggcgaatgtggaaagcacgccaacaaaagtttgccatcaggaaaatgcagcgacacacacatttatgcggcacatgtcgaactcaccaacaccgccctcgccactgcgttcgctatcagactgcggaaagagcttcgaggaggaggaactggagctgggcgagaactgcgagatgccacagaatctgagcagcaagcgccaggccagggaactagactctgagctggaaaacgaggtcctggatctggcaccgccaccgaagagattggccgaggagcaagaggaggaaaaggtggccagtgtcaatccaccacagcccgtggcatttgcaccggaggaaatgcatcaggctctgcaactgcagttgcacagctacatcgaaatggttcgccaattggcgccggaggcgtttcccaatcccaacctggccacgcagttcctgctgcagaactcactgcaagccttagcgcagtttcaggccctgcaacagatgaagcagcagcaaagggaggatcctctgcccagttactccacccccttggccaaatcaccactgagaagtccatccctgagtccggtgccccggcacagcaaatcccagcagcgaactccgccaaactcgatgactgccaattctctgggaatgagtagtgccgtgatgactccaaatacgcccagcatgcagcagcagccgcaactgcagcagagcactcccaagcccacgagtggactaactgtggcatctgccatggccaagctggaacaatcgccggaagagaccaccgatctggaggaactggaacagttcgccaagaccttcaaacagcggcgaatcaagctgggcttcacccagggcgatgtgggtctggccatgggcaaactgtatggcaatgacttctcgcagaccaccatttcccgcttcgaagccctcaatctgagcttcaagaacatgtgcaagctgaagccgctgctccagaaatggctggaggatgcggacagcacggtggccaagtcgggcggtggagtgttcaacatcaacacgatgaccagcacgctgagcagcacaccggaaagcatcctgggacgcagacgcaagaagcgcacctccatcgagaccacggtgcgcaccacgctggagaaggccttcctgatgaactgcaagcccacgtcggaggagattagccagctgtccgagcgcttgaacatggacaaggaggtgatccgggtgtggttctgcaatcgccgtcagaaggagaagcgcatcaatccctcgctggatctggacagtcccacgggcactccgctgagcagtcatgcctttgggtatccaccgcaggctctgaacatgtcccacatgcaaatggagggcggttcgggttccttctgcggcagttccatcagttcaggggaatag
+</textarea>
